@@ -1,2 +1,2 @@
 # freela-06
-Embora seja um projeto simples, foi trabalhoso e divertido servir fielmente a imagem.
+Painel de controles com o objetivo de acompanhar os ativos financeiros. Embora seja um projeto simples, foi trabalhoso e divertido servir fielmente a imagem.
