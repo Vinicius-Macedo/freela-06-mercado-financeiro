@@ -1,0 +1,211 @@
+$blue: #055787;
+$blue-white: #4B93CA;
+$yellow: #b13800;
+$white: #f7f7f7;
+$borda: #E2E2E2;
+$width: 175px;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body {
+  background: $white;
+  font-size: 18px;
+}
+
+header {
+  padding: 16px;
+  background: $white;
+  width: $width * 6;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+
+  h1 {
+    font-size: 24px;
+    color: $blue;
+  }
+
+  .fa-question-circle {
+    margin-right: auto;
+    color: $yellow;
+  }
+
+  .btns-topo-container {
+    border: solid 1px $blue-white;
+    display: flex;
+    height: 38px;
+    border-radius: 10px;
+
+    
+    .btn {
+      
+
+      a {
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        gap: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        text-decoration: none;
+        color: $blue-white;
+
+        i {
+          color: $blue;
+          pointer-events: none
+        }
+      }
+
+      .selecionado {
+        border-radius: 5px;
+        background: #055787;
+        border: 10px;
+        color: $white;
+
+        i {
+          color: $white;
+        }
+      }
+      
+
+    
+
+      
+    }
+
+  }
+}
+
+
+
+main {
+  padding: 16px;
+
+}
+
+h2 {
+  color: $yellow;
+  font-size: 16px;
+}
+
+
+
+.flex-container-horizontal {
+  margin: 16px 0;
+  list-style: none;
+  display: flex;
+  width: $width * 6;
+  padding-bottom: 16px;
+  border-bottom: solid 1px $borda;
+  
+}
+
+.last {
+  width: $width * 2;
+}
+
+.pequeno {
+  width: $width * 2;
+  flex-wrap: wrap;
+}
+
+.grafico-item {
+  display: flex;
+  border: 1px $borda;
+  flex-direction: column;
+  justify-content: space-between;
+  border-style: none solid;
+  padding: 0 12px;
+  width: $width;
+  height: 50px;
+
+    .sigla-container {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+
+      p {
+        font-size: 12px;
+        text-decoration: underline;
+        color: $blue;
+      }
+
+      .black {
+        color: #555;
+        text-decoration: none;
+      }
+
+      i {
+        padding-top: 1px; // icone do fontawersome não tem o tamanho correto
+        font-size: 10px;
+        color: $blue;
+      }
+
+    }
+
+    .valor-container {
+      display: flex;
+      gap: 4px;
+      justify-content: space-between;
+      align-items: center;
+
+      p {
+        font-weight: 700;
+        font-size: 20px;
+      }
+
+      .fa-chart-line {
+        margin-left: auto;
+        color: $blue;
+        font-size: 26px;
+      }
+
+      .fa-question-circle {
+        color: $yellow;
+        font-size: 24px;
+      }
+  }
+
+}
+
+
+
+.grid-container-3 {
+  display: grid;
+  width: $width * 6;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  .grid-child {
+    border: $borda 1px;
+    border-style: none solid;
+    
+    h2 {
+      padding: 0 12px;
+    }
+
+    ul {
+    border-bottom: none;
+
+      .grafico-item {
+        border: none;
+      }
+
+      .borda-right {
+        border-right: solid 1px $borda;
+        
+      }
+    }
+  }
+
+
+}
+
+
